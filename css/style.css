@@ -7,15 +7,22 @@
 #container .repos{
     width: 100%;
     padding: 5px;
+    margin-bottom: 30px;
     position: relative;
     background: white;
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+    box-shadow: 20px 20px rgba(0,0,0,.15);
+    transition: all .4s ease;
+}
+#container .repos:hover {
+    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+    box-shadow: 10px 10px rgba(0,0,0,.25);
 }
 #container .repos *{
     background: white;
 }
 #container .repos .user_avatar{
     float: left;
-    border: #0F0F0F solid;
     margin: 5px;
 }
 #container .repos .user_avatar img{

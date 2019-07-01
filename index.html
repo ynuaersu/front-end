@@ -6,10 +6,14 @@
 
     </head>
     <body>
+
         <div id="container">
+            <div v-if="loading" class="loading">
+              <img src="img/loading.gif" alt="">
+            </div>
             <div class="repos" v-for="item in items">
                 <span class="user_avatar"><img :src='item.owner.avatar_url + ".png"'></span>
-                <span class="title"><h1>{{item.name}}</h1></span>
+                <span class="name"><h1>{{item.name}}</h1></span>
                 <span class="desc"><p>{{item.description}}</p></span>
                 <span class="stars">Stars: {{item.stargazers_count}}</span>
                 <span class="issues">Issues: {{item.open_issues_count}}</span>

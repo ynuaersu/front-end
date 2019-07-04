@@ -4,22 +4,9 @@
 #container{
     padding: 10px;
 }
-#container .loading{
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-#container .loading img{
-    height: 100px;
-    width: 100px;
-}
 #container .repos{
     width: 100%;
-    height: 180px;
-    padding: 5px 5px;
-    position: relative;
-    margin-bottom: 30px;
+    padding: 5px;
     position: relative;
     background: white;
     border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
@@ -33,10 +20,10 @@
 #container .repos *{
     background: white;
 }
-#container #repo_list .repos .user_avatar{
-    position: absolute;
-    top: 10px;
-    left: 10px;
+#container .repos .user_avatar{
+    float: left;
+    border: #0F0F0F solid;
+    margin: 5px;
 }
 #container .repos .user_avatar img{
     width:100px;
@@ -44,37 +31,19 @@
 }
 #container .repos .user_avatar img:hover{
     opacity: .5;
-    transition: all 1s ease
+    transition: all 1s ease;
 }
-#container .repos .name{
-    position: absolute;
-    top:0;
-    left: 120px;
-    background: transparent;
+#container .repos .title{
+    margin-top: -10px;
 }
 #container .repos .desc{
-    position: absolute;
-    top: 60px;
-    left: 150px;
     text-align: justify;
-    background: transparent;
-}
-#container .repos .user{
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
 }
 #container .repos .stars{
-    position: absolute;
-    top: 120px;
-    left: 10px;
     border: #0F0F0F solid;
     padding: 2px;
 }
 #container .repos .issues{
-    position: absolute;
-    top: 150px;
-    left: 10px;
     border: #0F0F0F solid;
     padding: 2px;
 }
